@@ -1,0 +1,134 @@
+/* Sets the background and layout of the page */
+body {
+    background-color: #FFFCEE;
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Flex layout to place sidebar and form side by side */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    margin: 0;
+}
+
+/* Sidebar container styles */
+.sidebar {
+    background-color: #8B001B; /* Dark red background */
+    color: #FFFCEE; /* Light text color */
+    padding: 40px 30px; /* 40 padding up and down, 30 padding right and left */
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-left-radius: 15px; /* Rounded top-left corner */
+    border-bottom-left-radius: 15px; /* Rounded bottom-left corner */
+    height: 100%; /* Full height for the sidebar */
+}
+
+/* Sidebar paragraph */
+.sidebar p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* Sidebar logo image styles */
+.sidebar img {
+    width: 120px; /* Set the width of the image */
+    height: 120px; /* Set the height of the image */
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 20px; /* Space between the image and the text (p) below it */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Apply a drop shadow to the image */
+    display: block; /* Make the image a block-level element (necessary for centering) */
+    margin-left: auto; /* Automatically adjust the left margin to center the image */
+    margin-right: auto; /* Automatically adjust the right margin to center the image */
+}
+
+/* Login box container */
+.login-container {
+    background-color: #FFF9E9; /* Set the background color */
+    padding: 40px 30px; /* Add padding inside the box */
+    border-top-right-radius: 15px; /* Round the top-right corner of the box */
+    border-bottom-right-radius: 15px; /* Round the bottom-right corner of the box */
+    box-shadow: 0 0 20px rgba(91, 19, 33, 0.15); /* Apply a soft shadow around the box */
+    width: 360px; /* Set the width of the login box to 360px */
+}
+
+/* Login title text */
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #5C4B4B;
+    font-weight: bold;
+}
+
+/* Labels above input fields */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #5C4B4B;
+    font-weight: bold;
+}
+
+/* Input field styles */
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #E0D7C6;
+    border-radius: 8px;
+    background-color: #FFFBF3;
+}
+
+/* Focus style on input fields */
+form input:focus {
+    border-color: #8B001B;
+    background-color: #FFF7E0;
+    outline: none; /* Remove the default outline that appears when the input field is focused */
+}
+
+/* Login button styles */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #8B001B;
+    border: none;
+    color: #FFFCEE;
+    font-size: large;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #A61E35;
+}
+/* Error message styling */
+.error {
+    color: #f2ecee;
+    background-color: #8B001B;
+    border: 1px solid #8b001c98;
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Already Have An Account? */
+.login-link {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #5C4B4B;
+}
+
+/* The actual clickable login link */
+.login-link a {
+    color: #8B001B;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Hover effect for the login link */
+.login-link a:hover {
+    text-decoration: underline;
+}
